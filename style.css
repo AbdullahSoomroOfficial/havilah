@@ -13,6 +13,12 @@
   --color-light-orange: #f9bb7c;
   --color-white-purple: #d9c1bb;
   --color-white: #ffffff;
+  /* BREAKPOINTS */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 922px;
+  --breakpoint-xl: 1400px;
+  --breakpoint-xxl: 1400px;
 }
 
 /* FONT */
@@ -159,4 +165,31 @@ img {
   border-radius: 5px;
   font-size: x-large;
   font-family: "Maglite";
+}
+
+@media only screen and (min-width: var(--breakpoint-sm)) {
+  body {
+    background-color: red;
+  }
+}
+@media only screen and (min-width: var(--breakpoint-md)) {
+  body {
+    background-color: green;
+  }
+}
+@media only screen and (min-width: var(--breakpoint-lg)) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media only screen and (min-width: var(--breakpoint-xl)) {
+  body {
+    background-color: yellow;
+  }
+}
+@media only screen and (min-width: var(--breakpoint-xxl)) {
+  body {
+    background-color: purple;
+  }
 }
