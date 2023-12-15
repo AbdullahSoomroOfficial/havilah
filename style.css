@@ -37,6 +37,10 @@ img {
   display: flex;
   background-color: var(--color-black);
   padding: 0 2rem;
+  border: 0;
+  border-bottom: 1px;
+  border-color: var(--color-light-orange);
+  border-style: solid;
 }
 
 .nav .logo {
@@ -111,9 +115,10 @@ img {
   bottom: 0;
   width: 400px;
   background-color: var(--color-black);
-  opacity: 0.7;
+  opacity: 0.85;
   backdrop-filter: blur(20px);
   font-size: x-large;
+  z-index: 1000;
 }
 
 .sidebar .fa-solid.fa-x {
@@ -180,29 +185,21 @@ img {
   align-items: center;
   padding: 0 30px;
   color: var(--color-light-orange);
+  text-align: center;
 }
 
 @media only screen and (max-width: 1400px) {
-  body {
-    background-color: green;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
   .nav .nav-links-container {
     gap: 3rem;
   }
-  body {
-    background-color: red;
-  }
 }
 
 @media only screen and (max-width: 992px) {
   .nav .nav-links-container {
     gap: 2rem;
-  }
-  body {
-    background-color: yellow;
   }
 }
 
@@ -221,12 +218,23 @@ img {
     display: block;
   }
 
-  body {
-    background-color: purple;
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .hero-image-container img {
+    width: 70%;
+  }
+
+  .hero .hero-text-container {
+    padding: 100px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .hero .hero-text-container {
+    padding: 70px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
