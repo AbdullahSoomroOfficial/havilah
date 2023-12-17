@@ -463,6 +463,7 @@ img {
   background-color: var(--color-dark-grey);
   display: flex;
   padding: 5% 0;
+  gap: 1rem;
 }
 
 .details > * {
@@ -527,6 +528,58 @@ img {
 
 .statistics-title {
   font-size: larger;
+}
+
+/* OFFERS */
+.offers-conatiner {
+  padding: 10%;
+  background-color: var(--color-light-purple);
+}
+
+.offers-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: x-large;
+  color: var(--color-light-orange);
+}
+
+.offers-paragraph {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: larger;
+}
+
+.offer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.offer-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.offer-item > * {
+  flex: 1;
+}
+
+.offer-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.offer-description-title {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--color-light-orange);
+}
+
+.offer-description-paragraph {
+  font-size: larger;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -649,6 +702,15 @@ img {
 
   .masonry-item-btn {
     font-size: 15;
+  }
+  /*============== PAGE 2 (ABOUT US) ==============*/
+  /* OFFERS */
+  .offer-item {
+    flex-direction: column;
+  }
+
+  .offer-container .offer-item:nth-child(2) {
+    flex-direction: column-reverse;
   }
 }
 
