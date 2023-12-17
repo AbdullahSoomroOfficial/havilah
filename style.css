@@ -13,8 +13,7 @@
   --color-light-orange: #f9bb7c;
   --color-white-purple: #d9c1bb;
   --color-white: #ffffff;
-  /* --color-black: #000000; */
-  --color-black: #45213e;
+  --color-black: #000000;
 }
 
 /* FONT */
@@ -36,7 +35,7 @@ img {
 /* NAVBAR */
 .nav {
   display: flex;
-  background-color: var(--color-black);
+  background-color: var(--color-light-purple);
   padding: 0 2rem;
   border: 0;
   border-bottom: 1px;
@@ -117,7 +116,7 @@ img {
   right: 0;
   bottom: 0;
   width: 400px;
-  background-color: var(--color-black);
+  background-color: var(--color-dark-purple);
   opacity: 0.9;
   font-size: x-large;
   z-index: 1000;
@@ -224,7 +223,7 @@ img {
 
 /* PRODUCTS */
 .products {
-  background-color: var(--color-black);
+  background-color: var(--color-light-purple);
   padding: 5% 2%;
 }
 
@@ -383,7 +382,7 @@ img {
 }
 
 .masonry-item-btn {
-  background-color: var(--color-black);
+  background-color: var(--color-dark-purple);
   color: var(--color-light-orange);
   width: max-content;
   border-radius: 50px;
@@ -396,7 +395,7 @@ img {
 /* FOOTER */
 .footer {
   padding: 8%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-light-purple);
   color: var(--color-light-orange);
   display: flex;
 }
