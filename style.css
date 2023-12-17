@@ -13,7 +13,8 @@
   --color-light-orange: #f9bb7c;
   --color-white-purple: #d9c1bb;
   --color-white: #ffffff;
-  --color-black: #000000;
+  /* --color-black: #000000; */
+  --color-black: #45213e;
 }
 
 /* FONT */
@@ -446,6 +447,89 @@ img {
   color: var(--color-light-orange);
 }
 
+/* ============= PAGE 2 (ABOUT US) ============ */
+/* ABOUT */
+.about {
+  min-height: 200px;
+  background-color: var(--color-light-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* DETAILS */
+.details {
+  background-color: var(--color-dark-grey);
+  display: flex;
+  padding: 5% 0;
+}
+
+.details > * {
+  flex: 1;
+}
+
+.details-image {
+  height: 100%;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.details-item {
+  color: var(--color-light-orange);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10%;
+}
+
+.details-item-icon {
+  font-size: large;
+}
+
+.details-item-description-title {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 1rem;
+}
+
+/* STATISTICS CONTAINER */
+.statistics-container {
+  background-color: var(--color-light-orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+.statistics-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.statistics-image {
+  width: 60px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.statistics-count {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.statistics-title {
+  font-size: larger;
+}
+
 @media only screen and (max-width: 1400px) {
 }
 
@@ -471,6 +555,15 @@ img {
 
   .masonry-item-btn {
     padding: 15px 35px;
+  }
+  /* =============== PAGE 2 (ABOUT US) =============== */
+  /* DETAILS */
+  .details {
+    flex-direction: column;
+  }
+
+  .details-container {
+    align-items: center;
   }
 }
 
@@ -576,6 +669,21 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+
+  /* ============= PAGE 2 (ABOUT US) ============ */
+  /* ABOUT */
+  .about {
+    min-height: 150px;
+  }
+
+  /* STATISTICS CONTAINER */
+  .statistics-container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media only screen and (max-width: 669px) {
@@ -629,6 +737,23 @@ img {
 
   .hero .hero-text-container {
     gap: 0.5rem;
+  }
+
+  /* ========= PAGE 2 (ABOUT US) ========== */
+  /* DETAILS */
+  .details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .details-item {
+    padding: 5%;
+  }
+
+  /* STATISTICS CONTAINER */
+  .statistics-container {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
