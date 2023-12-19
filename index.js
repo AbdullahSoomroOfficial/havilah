@@ -19,5 +19,15 @@ function handleViewportResize() {
   }
 }
 
-// Listen for the resize event
 window.addEventListener("resize", handleViewportResize);
+
+// ACOORDION
+document.querySelectorAll(".accordion-header").forEach(function (header) {
+  header.addEventListener("click", function () {
+    const item = this.parentNode;
+    item.classList.toggle("active");
+    const icon = this.querySelector("i");
+    icon.classList.toggle("fa-plus");
+    icon.classList.toggle("fa-minus");
+  });
+});
