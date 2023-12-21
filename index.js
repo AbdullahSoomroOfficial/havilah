@@ -1,3 +1,12 @@
+// NAV
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 0) {
+    document.querySelector(".nav").classList.add("solid");
+  } else {
+    document.querySelector(".nav").classList.remove("solid");
+  }
+});
+
 function showSidebar() {
   document.querySelector(".sidebar").classList.add("show");
   document.querySelector(".sidebar").classList.remove("hide");
@@ -11,8 +20,6 @@ function hideSidebar() {
   //menu-bars
   document.querySelector(".menu-bars").classList.remove("hide");
 }
-
-// window.addEventListener("resize", handleViewportResize);
 
 // ACOORDION
 document.querySelectorAll(".accordion-header").forEach(function (header) {
