@@ -73,7 +73,7 @@ img {
 .nav .nav-links-container .nav-link {
   font-size: 15px;
   font-weight: 500;
-  color: var(--color-white);
+  color: var(--color-white-purple);
   cursor: pointer;
   text-decoration: none;
 }
@@ -99,7 +99,7 @@ img {
 }
 
 .nav .icons-container .icon {
-  color: var(--color-white);
+  color: var(--color-white-purple);
   font-size: 25px;
 }
 
@@ -208,7 +208,7 @@ img {
 }
 
 .hero img {
-  /* filter: grayscale(30%); */
+  filter: grayscale(10%);
   width: 73%;
   top: -50px;
   left: 54%;
