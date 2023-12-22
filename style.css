@@ -426,18 +426,23 @@ img {
   z-index: 9;
 }
 
+.overlay-container {
+  display: flex;
+}
+
 .modal-container .overlay {
   position: absolute;
   bottom: 0;
   z-index: 88;
   height: 300px;
   width: 100%;
-  background-color: red;
-  background: linear-gradient(
+  /* background-color: red; */
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0.3),
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 1)
-  );
+  ); */
+  background-image: url("./images/shade-circle.svg");
 }
 
 /* FEATURES */
