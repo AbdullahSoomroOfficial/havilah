@@ -31,3 +31,32 @@ document.querySelectorAll(".accordion-header").forEach(function (header) {
     icon.classList.toggle("fa-minus");
   });
 });
+
+// CAROUSEL
+const carouselItems = document.querySelectorAll(".carousel-item");
+const previousBtn = document.querySelector(".previous-btn");
+const nextBtn = document.querySelector(".next-btn");
+let counter = 0;
+
+carouselItems.forEach((carouselItem, index) => {
+  carouselItem.style.left = `${index * 100}%`;
+});
+
+const slideCarouselItem = () => {
+  carouselItems.forEach((carouselItem) => {
+    carouselItem.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};
+
+const showNextCarouselItem = () => {
+  if (!(counter + 1 > carouselItems.length - 1)) {
+    counter++;
+    slideCarouselItem();
+  }
+};
+const showPreviousCarouselItem = () => {
+  if (!(counter - 1 < 0)) {
+    counter--;
+    slideCarouselItem();
+  }
+};
