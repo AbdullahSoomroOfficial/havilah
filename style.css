@@ -442,7 +442,10 @@ img {
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 1)
   ); */
-  background-image: url("./images/shade-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/background-overlay.png");
 }
 
 /* FEATURES */
