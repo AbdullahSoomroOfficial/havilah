@@ -118,7 +118,7 @@ img {
 
 .nav .menu-bars {
   color: var(--color-light-orange);
-  font-size: larger;
+  font-size: 2.8vw;
   display: none;
 }
 
@@ -308,7 +308,7 @@ img {
   letter-spacing: 0.2vw;
   position: absolute;
   top: 43%;
-  margin-top: 14px;
+  margin-top: 1.2vw;
   width: 100%;
   text-align: center;
 }
