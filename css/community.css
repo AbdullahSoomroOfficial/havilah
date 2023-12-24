@@ -1,4 +1,4 @@
-.catalog__header__container {
+.community__header__container {
   min-height: 45vw;
   background: linear-gradient(
     to right,
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.catalog__header__flower__container {
+.community__header__flower__container {
   background-image: url("../images/flower-header-bg-removebg-preview.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -28,7 +28,7 @@
   opacity: 0.4;
 }
 
-.catalog__header__img__container {
+.community__header__img__container {
   background-image: url("../images/image-gallery-3-removebg-preview.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,59 +40,17 @@
   position: absolute;
 }
 
-.catalog__header__title {
+.community__header__title {
   position: absolute;
-  top: 25%;
+  top: 45%;
   z-index: 2;
 }
 
-.catalogs__container {
-  padding: 5% 20%;
+.community__description__container {
   background-color: var(--color-white-purple);
-}
-
-.catalogs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.catalogs > * {
-  flex: 1;
-}
-
-.catalog__item__img__container {
-  max-width: 400px;
-}
-
-.catalog__item {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.catalog__item__title {
-  font-size: 2.5vw;
-}
-
-.catalog__item__description {
+  padding: 5% 10%;
   font-family: "Montserrat";
-  font-size: 1.4vw;
-}
-
-.catalog__item__rating .fa-star {
-  color: var(--color-light-purple);
-}
-
-.catalog__item__price {
-  font-size: 3vw;
-}
-
-@media only screen and (max-width: 992px) {
-  .catalogs {
-    flex-direction: column;
-    align-items: center;
-  }
+  line-height: 1.7;
+  font-size: 1.5vw;
+  text-align: center;
 }

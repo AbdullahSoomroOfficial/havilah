@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Space+Mono&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* COLORS */
+  --color-dark-grey: #1a1a1a;
+  --color-dark-purple: #45213e;
+  --color-light-purple: #9a6c7d;
+  --color-light-orange: #f9bb7c;
+  --color-white-purple: #d9c1bb;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+/* FONT */
+@font-face {
+  font-family: "Maglite", serif;
+  src: url("./fonts/Maglite.otf") format("otf");
+}
+
+html {
+  font-family: "Maglite", serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    var(--color-light-purple),
+    var(--color-dark-purple)
+  );
+}
+
+/* GENRAL CLASSES */
+img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+/* CSS RESET + GENERIC STYLES  */
+@import url("index.css");
+
+/* NAVBAR */
+@import url("navbar.css");
+
+/* PAGES */
+@import url("home.css");
+@import url("about.css");
+@import url("catalog.css");
+@import url("contact.css");
+@import url("community.css");
+
+/* FOOTER */
+@import url("footer.css");
+
+/* IMAGE GALLERY */
+@import url("imageGallery.css");
