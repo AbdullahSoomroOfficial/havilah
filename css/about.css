@@ -1,0 +1,62 @@
+.about__header__container {
+  min-height: 45vw;
+  background: linear-gradient(
+    to right,
+    var(--color-light-purple),
+    var(--color-dark-purple)
+  );
+  color: var(--color-light-orange);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  /* padding-bottom: 5vw; */
+  font-size: 12vw;
+  position: relative;
+}
+
+.about__header__img__container {
+  background-image: url("../images/flower-header-bg-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  min-height: 45vw;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.about__header__title {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+}
+
+.description__container {
+  background-color: var(--color-white-purple);
+  padding: 5%;
+}
+
+.description__heading {
+  font-size: 2.5vw;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+
+.description__paragraph {
+  font-family: "Montserrat";
+  line-height: 1.6;
+  margin-top: 1vw;
+  margin-bottom: 1.5vw;
+  font-size: 1.8vw;
+}
+
+.description__paragraph > ul,
+li {
+  font-family: "Montserrat";
+}
+
+div.description__paragraph > ul,
+div.description__paragraph > ul li:nth-child(2) > ul {
+  padding-left: 2.4vw;
+}

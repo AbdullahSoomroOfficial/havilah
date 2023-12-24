@@ -1,0 +1,37 @@
+.image__gallery__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  min-height: 50vw;
+}
+
+.image__gallery__item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image__gallery__item__1 {
+  background-image: url("../images/image-gallery-1.jpg");
+  grid-row: span 6;
+}
+
+.image__gallery__item__2 {
+  background-image: url("../images/image-gallery-2.jpg");
+  grid-row: span 3;
+}
+
+.image__gallery__item__3 {
+  background-image: url("../images/image-gallery-3.jpg");
+  grid-row: span 4;
+}
+
+.image__gallery__item__4 {
+  background-image: url("../images/image-gallery-4.jpg");
+  grid-row: span 3;
+}
+
+.image__gallery__item__5 {
+  background-image: url("../images/image-gallery-5.jpg");
+  grid-row: span 2;
+}
