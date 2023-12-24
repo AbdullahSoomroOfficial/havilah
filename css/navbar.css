@@ -131,6 +131,7 @@
   border-color: var(--color-light-orange);
   border-style: solid;
   color: var(--color-light-orange);
+  width: max-content;
 }
 
 .sidebar .sidebar-nav-links-container > .nav-link:hover {

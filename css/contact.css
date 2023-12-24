@@ -101,6 +101,11 @@
   border: 2px solid var(--color-light-purple);
 }
 
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: 2px solid var(--color-light-purple);
+}
+
 .contact__form button {
   border: 0;
   background-color: var(--color-light-purple);
@@ -109,4 +114,8 @@
   font-size: 20px;
   font-family: "Montserrat";
   margin-top: 20px;
+}
+
+.contact__form button:hover {
+  background-color: var(--color-dark-purple);
 }
