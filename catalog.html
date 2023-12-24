@@ -15,6 +15,8 @@
     />
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- CATALOG CSS -->
+    <link rel="stylesheet" href="css/catalog.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -45,7 +47,7 @@
         <div class="sidebar-nav-links-container">
           <a href="/index.html" class="nav-link">HOME</a>
           <a href="/about.html" class="nav-link">ABOUT</a>
-          <a href="#" class="nav-link">CATALOG</a>
+          <a href="/catalog.html" class="nav-link">CATALOG</a>
           <a href="/contact.html" class="nav-link active">CONTACT</a>
           <!-- <a href="/community.html" class="nav-link">COMMUNITY</a> -->
         </div>
@@ -57,91 +59,54 @@
         </div>
       </div>
     </nav>
-    <!-- CONTACT -->
-    <section class="about">Contact Us</section>
-    <!-- CONTACT CONTAINER-->
-    <section class="contact-container">
-      <ul class="contact-details-container">
-        <li class="contact-detail-item">
-          <div class="contact-detail-icon-container">
-            <i class="fa fa-phone"></i>
+    <!-- CATALOG HEADER -->
+    <section class="catalog__header__container">
+      <div class="catalog__header__img__container"></div>
+      <div class="catalog__header__title">DEBUT<br />COLLECTION</div>
+    </section>
+    <!-- CATALOG CONTAINER -->
+    <div class="catalogs__container">
+      <div class="catalogs">
+        <div class="catalog__item">
+          <div class="catalog__item__img__container">
+            <img src="./images/catalog-image-1.jpg" alt="" />
           </div>
-          <div class="contact-detail-content">
-            <h4>Talk To Us</h4>
-            <p>
-              <b>Toll-Free: </b> 0000 - 123 - 456789 <br /><b>Fax: </b> 0000 -
-              123 - 456789
-            </p>
+          <div class="catalog__item__title">Magnolia</div>
+          <div class="catalog__item__description">
+            High-Quality Yaki Textured Wig - 13*4 Lace Part
           </div>
-        </li>
-        <li class="contact-detail-item">
-          <div class="contact-detail-icon-container">
-            <i class="fa fa-envelope"></i>
+          <div class="catalog__item__rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+            (5)
           </div>
-          <div class="contact-detail-content">
-            <h4>Email</h4>
-            <p>
-              <a title="" href="">mail@example.com</a><br /><a title="" href=""
-                >support@example.com</a
-              >
-            </p>
+          <div class="catalog__item__price">£65</div>
+        </div>
+        <div class="catalog__item">
+          <div class="catalog__item__img__container">
+            <img src="./images/catalog-image-2.jpg" alt="" />
           </div>
-        </li>
-        <li class="contact-detail-item">
-          <div class="contact-detail-icon-container">
-            <i class="fa fa-location-arrow"></i>
+          <div class="catalog__item__title">Magnolia</div>
+          <div class="catalog__item__description">
+            High-Quality Yaki Textured Wig - 13*4 Lace Part
           </div>
-          <div class="contact-detail-content">
-            <h4>Address</h4>
-            <p>
-              No: 58 A, East Madison Street,<br />
-              Baltimore, MD, USA 4508<br />
-            </p>
+          <div class="catalog__item__rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i> (5)
           </div>
-        </li>
-      </ul>
-      <div class="contact-form-container">
-        <form
-          action="#"
-          id="contact_form"
-          accept-charset="UTF-8"
-          class="contact-form"
-        >
-          <input
-            type="text"
-            id="ContactFormName"
-            name="contact[name]"
-            placeholder="Name"
-            autocapitalize="words"
-            value=""
-          />
-          <input
-            type="email"
-            id="ContactFormEmail"
-            name="contact[email]"
-            placeholder="Email"
-            autocorrect="off"
-            autocapitalize="off"
-            value=""
-            required="required"
-          />
-          <input
-            type="tel"
-            id="-phone"
-            name="contact[phone]"
-            pattern="[0-9\-]*"
-            placeholder="Phone"
-            value=""
-          />
-          <textarea
-            rows="7"
-            id="ContactFormMessage"
-            name="contact[body]"
-            placeholder="Message"
-          ></textarea>
-          <button type="submit" class="btn">Send</button>
-        </form>
+          <div class="catalog__item__price">£65</div>
+        </div>
       </div>
+    </div>
+    <!-- IMAGE GALLERY -->
+    <section class="image__gallery__container">
+      <div class="image__gallery__item image__gallery__item__1"></div>
+      <div class="image__gallery__item image__gallery__item__2"></div>
+      <div class="image__gallery__item image__gallery__item__3"></div>
+      <div class="image__gallery__item image__gallery__item__4"></div>
+      <div class="image__gallery__item image__gallery__item__5"></div>
     </section>
     <!-- FOOTER -->
     <footer class="footer">
