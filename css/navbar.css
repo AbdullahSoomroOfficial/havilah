@@ -12,11 +12,11 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     var(--color-light-purple),
     var(--color-dark-purple)
-  );
+  ); */
 }
 
 .nav.solid {
