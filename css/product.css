@@ -1,0 +1,341 @@
+body {
+  background: none;
+  background-color: var(--color-white);
+}
+
+.product__header {
+  min-height: 100px;
+  background-color: var(--color-light-purple);
+  background-image: url("../images/flower-header-bg-removebg-preview.png");
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-size: 50%;
+  opacity: 0.85;
+}
+
+.product__main__content__container {
+  display: flex;
+  margin-top: 60px;
+  padding: 40px 5%;
+  gap: 2rem;
+}
+
+/* .product__main__content__container > * {
+  flex: 1;
+} */
+
+.left__column {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+
+.product__image__gallery__slider__container {
+  flex: 2;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.image__gallery__slides {
+  height: 50vw;
+  overflow: hidden;
+  background-color: var(--color-light-purple);
+}
+
+.product__image__gallery__main__image__container {
+  flex: 5;
+  height: 50vw;
+}
+
+.product__image__gallery__main__image__container .main__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fa-angle-up,
+.fa-angle-down {
+  font-size: 44px;
+  cursor: pointer;
+}
+
+.fa-angle-up:hover,
+.fa-angle-down:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 5px;
+  border-radius: 5px;
+}
+
+.right__column {
+  flex: 2;
+}
+.product__details__container {
+  margin-top: 50px;
+}
+.product__title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.product__details__container p {
+  margin-top: 10px;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-family: "Montserrat", "Helvetica Neue";
+}
+.product__rating {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.product__rating .fa-star {
+  color: var(--color-light-purple);
+}
+.product__price {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.product__availability {
+  font-family: "Montserrat", "Helvetica Neue";
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #99b83c;
+}
+.product__availability .fa-check {
+  background-color: #99b83c;
+  color: white;
+  padding: 6px 7px;
+  border-radius: 50%;
+}
+.product__style {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+}
+.product__length {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+}
+.product__style span,
+.product__length span {
+  font-weight: normal;
+  margin-left: 12px;
+}
+
+.product__colours {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial;
+}
+.product__colours .colours {
+  display: flex;
+  gap: 1rem;
+  margin-top: 10px;
+}
+.product__colours .colours .colour {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product__add__to__cart__btn {
+  margin-top: 15px;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color-light-purple);
+  font-size: 30px;
+  font-family: "Montserrat", "Helvetica Neue";
+  color: var(--color-light-orange);
+  font-weight: 600;
+  padding: 4px 0;
+}
+.product__add__to__cart__btn:hover {
+  background-color: var(--color-light-purple);
+}
+.product__add__to__wishlist {
+  margin-top: 15px;
+  font-size: 25px;
+}
+.product__add__to__wishlist a {
+  color: var(--color-black);
+  margin-left: 6px;
+}
+.product__add__to__wishlist a:hover {
+  color: var(--color-light-purple);
+}
+
+.product__add__to__wishlist .fa-heart {
+  font-size: 30px;
+  cursor: pointer;
+}
+.product__add__to__wishlist .fa-heart:hover {
+  color: var(--color-light-purple);
+}
+
+.product__details {
+  padding: 0 5%;
+  display: flex;
+  gap: 2rem;
+}
+
+.product__details__left__column {
+  flex: 3;
+}
+.product__details__right__column {
+  flex: 2;
+}
+
+.product__details__accordion {
+  margin-bottom: 30px;
+}
+.product__details__accordion__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  border-bottom: 2px solid var(--color-light-purple);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.product__details__accordion__body {
+  font-family: "Montserrat", "Helvetica Neue";
+  font-size: 20px;
+  line-height: 1.58;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-in;
+}
+
+.product__details__accordion__body > div {
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+/* .product__details__accordion__body > ul {
+  font-family: "Montserrat", "Helvetica Neue";
+} */
+
+.height__auto {
+  grid-template-rows: 1fr;
+}
+
+.suggested__product__container h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.cards__container {
+  margin: 0 auto;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.cards__container .fa-angle-left,
+.cards__container .fa-angle-right {
+  font-size: 25px;
+  padding: 4px 4px;
+  flex: 1;
+}
+
+.cards__container .fa-angle-left:hover,
+.cards__container .fa-angle-right:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.cards {
+  flex: 15;
+  display: flex;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+  position: absolute;
+  transition: 1s;
+}
+
+.card__title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.card__details {
+  font-family: "Montserrat", "Helvetica Neue";
+  font-size: 15px;
+}
+.card__rating .fa-star {
+  color: var(--color-light-purple);
+}
+.card__price {
+  font-size: 22px;
+}
+
+.review {
+  text-align: center;
+}
+
+.review h2 {
+  margin-top: 60px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.review a {
+  text-decoration: none;
+  border: 2px solid var(--color-light-purple);
+  padding: 10px 0px;
+  font-size: 20px;
+  color: var(--color-light-orange);
+  margin: 0 auto;
+  margin-top: 40px;
+  display: block;
+  width: 30%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+/* .cards__container */
+
+@media screen and (max-width: 1024px) {
+  .product__main__content__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product__details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .image__gallery__slides {
+    height: 80vw;
+  }
+
+  .product__image__gallery__main__image__container {
+    height: 80vw;
+  }
+}
