@@ -209,12 +209,12 @@ body {
 
 .product__details__accordion__body > div {
   overflow: hidden;
-}
-
-.product__details__accordion__body > ul {
-  font-family: "Montserrat", "Helvetica Neue";
   padding-left: 20px;
 }
+
+/* .product__details__accordion__body > ul {
+  font-family: "Montserrat", "Helvetica Neue";
+} */
 
 .height__auto {
   grid-template-rows: 1fr;
@@ -225,6 +225,7 @@ body {
   letter-spacing: 2px;
   font-weight: normal;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .cards__container {
