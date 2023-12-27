@@ -45,6 +45,11 @@ body {
   background-color: var(--color-light-purple);
 }
 
+.image__gallery__slide {
+  transition: transform 0.5s;
+  /* height: calc(50vw / 3); */
+}
+
 .product__image__gallery__main__image__container {
   flex: 5;
   height: 50vw;
